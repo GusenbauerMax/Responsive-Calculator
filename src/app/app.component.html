@@ -1,0 +1,99 @@
+<div fxFlexFill fxLayout="column" class="mainContainer">
+  <div class="result">
+    <p class="resultText">{{ calculation }}</p>
+    <p class="error" [hidden]="!errorAccured">{{ error }}</p>
+  </div>
+  <div fxLayout="row" class="inputContainer">
+      <div fxLayout="column" fxFlex.xs="69%" fxFlex.sm="37.5%">
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button numberButton" (click)="addCalc(1)">1</button>
+          <button fxFlex class="button numberButton" (click)="addCalc(2)">2</button>
+          <button fxFlex class="button numberButton" (click)="addCalc(3)">3</button>
+        </div>
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button numberButton" (click)="addCalc(4)">4</button>
+          <button fxFlex class="button numberButton" (click)="addCalc(5)">5</button>
+          <button fxFlex class="button numberButton" (click)="addCalc(6)">6</button>
+        </div>
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button numberButton" (click)="addCalc(7)">7</button>
+          <button fxFlex class="button numberButton" (click)="addCalc(8)">8</button>
+          <button fxFlex class="button numberButton" (click)="addCalc(9)">9</button>
+        </div>
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button numberButton" (click)="addCalc(0)">0</button>
+          <button fxFlex class="button numberButton" (click)="addCalc(-2)">,</button>
+          <button fxHide.xs="true" fxFlex class="button numberButton"></button>
+          <button fxHide.sm="true" fxFlex class="button numberButton" (click)="calc()">=</button>
+        </div>
+      </div>
+
+      <div fxHide.sm="true" fxFlex.xs="23%" fxFlex.sm="25%" fxLayout="column" class="simpleOperators">
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button simpleOperatorsButton" (click)="addCalc(-1)">←</button>
+        </div>
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button simpleOperatorsButton" (click)="addCalc(-4)">÷</button>
+        </div>
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button simpleOperatorsButton" (click)="addCalc(-3)">x</button>
+        </div>
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button simpleOperatorsButton" (click)="addCalc(-6)">-</button>
+        </div>
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button simpleOperatorsButton" (click)="addCalc(-5)">+</button>
+        </div>
+      </div>
+
+      <div fxHide.xs="true" fxFlex.xs="23%" fxFlex.sm="25%" fxLayout="column" class="simpleOperators">
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button simpleOperatorsButton" (click)="addCalc(-4)">÷</button>
+          <button fxFlex class="button simpleOperatorsButton" (click)="addCalc(-1)">←</button>
+        </div>
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button simpleOperatorsButton" (click)="addCalc(-3)">x</button>
+          <button fxFlex class="button simpleOperatorsButton"></button>
+        </div>
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button simpleOperatorsButton" (click)="addCalc(-6)">-</button>
+          <button fxFlex class="button simpleOperatorsButton"></button>
+        </div>
+        <div fxLayout="row" class="buttonContainer">
+          <button fxFlex class="button simpleOperatorsButton" (click)="addCalc(-5)">+</button>
+          <button fxFlex class="button simpleOperatorsButton" (click)="calc()">=</button>
+        </div>
+      </div>
+
+      <div fxFlex.sm="37.5%" fxHide.xs="true">
+        <div fxLayout="row" class="smallButtonContainer">
+          <button fxFlex class="button hardOperatorsButton">INV</button>
+          <button fxFlex class="button hardOperatorsButton">GRAD</button>
+          <button fxFlex class="button hardOperatorsButton">%</button>
+        </div>
+        <div fxLayout="row" class="smallButtonContainer">
+          <button fxFlex class="button hardOperatorsButton">sin</button>
+          <button fxFlex class="button hardOperatorsButton">cos</button>
+          <button fxFlex class="button hardOperatorsButton">tan</button>
+        </div>
+        <div fxLayout="row" class="smallButtonContainer">
+          <button fxFlex class="button hardOperatorsButton">ln</button>
+          <button fxFlex class="button hardOperatorsButton">log</button>
+          <button fxFlex class="button hardOperatorsButton">√</button>
+        </div>
+        <div fxLayout="row" class="smallButtonContainer">
+          <button fxFlex class="button hardOperatorsButton">π</button>
+          <button fxFlex class="button hardOperatorsButton">e</button>
+          <button fxFlex class="button hardOperatorsButton">^</button>
+        </div>
+        <div fxLayout="row" class="smallButtonContainer">
+          <button fxFlex class="button hardOperatorsButton">(</button>
+          <button fxFlex class="button hardOperatorsButton">)</button>
+          <button fxFlex class="button hardOperatorsButton">!</button>
+        </div>
+      </div>
+      <div fxHide.sm="true" fxFlex.xs="8%">
+        <button fxFlex class="button swipeButton"><</button>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+.result {
+    height: 35vh;
+}
+
+.inputContainer {
+    height: 65vh;
+}
+
+.buttonContainer {
+    height: 16.25vh;
+}
+
+.smallButtonContainer {
+    height: 13vh;
+}
+
+.mainContainer {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.resultText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 6.5vh;
+    position: absolute;
+    right: 3vh;
+    top: 5vh;
+}
+
+.error {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    position: absolute;
+    color: red;
+    left: 1vh;
+    top: 25vh;
+}
+
+.button {
+    font-size: 4.5vh;
+    border: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+.numberButton {
+    background-color: #f2f2f2;
+}
+
+.numberButton:active {
+    background-color: #e6e6e6;
+}
+
+.simpleOperatorsButton {
+    background-color: #f2f2f2;
+    color: #1c72e9;
+}
+
+.simpleOperatorsButton:active {
+    background-color: #e6e6e6;
+}
+
+.hardOperatorsButton {
+    background-color: #1c72e9;
+    color: #f2f2f2;
+}
+
+.hardOperatorsButton:active {
+    background-color: #1563d1;
+}
+
+.swipeButton {
+    background-color: #1c72e9;
+    color: #f2f2f2;
+    font-size: 2.5vh;
+}
+
+.swipeButton:active {
+    background-color: #1563d1;
+}
+
+.simpleOperators {
+  border-left-style: solid;
+  border-width: 1px;
+  border-color: #d9d9d9;
+}
